@@ -1,5 +1,5 @@
 ---
-- name: Connection Testing Ans
+- name: Connection Testing Ansible
   hosts: clear
   become: yes
 
