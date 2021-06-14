@@ -4,7 +4,7 @@
   become: yes
 
   tasks:
-  - name: Ping servers
+  - name: Ping server
     ping:
   - name: Check Linux distro
     debug: var=ansible_os_family
