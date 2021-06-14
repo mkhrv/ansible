@@ -1,0 +1,1 @@
+ /usr/bin/ansible-playbook /home/ubuntu/ansible_git/pl_ping.yml
