@@ -1,0 +1,10 @@
+---
+- name: Connection Testing
+  hosts: clear
+  become: yes
+
+  tasks:
+  - name: Ping servers
+    ping:
+  - name: Check Linux distro
+    debug: var=ansible_os_family
