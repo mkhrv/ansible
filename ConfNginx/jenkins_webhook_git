@@ -1,0 +1,6 @@
+server {
+        listen 8083;
+        server_name ec2_3_67_172_240.eu_central_1.compute.amazonaws.com_80831;
+        root /home/ubuntu/jenkins_webhook_git;
+        index index.html;
+}

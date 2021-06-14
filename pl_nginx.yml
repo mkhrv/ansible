@@ -1,0 +1,78 @@
+---
+- name: Connection Testing
+  hosts: clear
+  become: yes
+
+
+  tasks:
+  - name: Ping servers
+    ping:
+  - name: Check Linux distro
+    debug: var=ansible_os_family
+
+  - block: #For Debian
+
+    - name: Update and upgrade apt package
+      become: yes
+      apt:
+        upgrade: yes
+        update_cache: yes
+        cache_valid_time: 86400 #One day
+
+    - name: Update all packages
+      become: yes
+      apt:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+    - name: Update apt cashe and Install Nginx
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+
+    - name: Create Dir
+      file:
+        path: /home/ubuntu/jenkins_webhook_git/
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+        mode: 0775
+
+    - name: Copy File index.html
+      copy:
+        src: /home/ubuntu/ansible/DirNginx/index.html
+        dest: /home/ubuntu/jenkins_webhook_git/index.html
+        owner: ubuntu
+        group: ubuntu
+        mode: 0644
+
+    - name: Copy File Config
+      copy:
+        src: /home/ubuntu/ansible/ConfNginx/jenkins_webhook_git
+        dest: /etc/nginx/sites-available/jenkins_webhook_git
+        owner: root
+        group: root
+        mode: 0644
+
+    - name: Create a symbolic link
+      file:
+#src: /file/to/link/to
+        src: /etc/nginx/sites-available/jenkins_webhook_git
+#dest: /path/to/symlink
+        dest: /etc/nginx/sites-enabled/jenkins_webhook_git
+        owner: root
+        group: root
+        state: link
+      notify:
+      - Restart Nginx
+
+    when: ansible_os_family == "Debian"
+
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
