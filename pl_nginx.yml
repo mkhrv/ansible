@@ -52,7 +52,7 @@
 
     - name: Copy File index.html
       copy:
-        src: /home/ubuntu/ansible_git/DirNginx/Good-morning_0.jpg*
+        src: /home/ubuntu/ansible_git/DirNginx/Good-morning_0.jpg
         dest: /home/ubuntu/jenkins_webhook_git/Good-morning_0.jpg
         owner: ubuntu
         group: ubuntu
