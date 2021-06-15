@@ -40,16 +40,24 @@
         group: ubuntu
         mode: 0775
 
+
     - name: Copy File index.html
       copy:
-        src: /home/ubuntu/ansible_git/DirNginx/*
-        dest: /home/ubuntu/jenkins_webhook_git/*
-
-#        src: /home/ubuntu/ansible_git/DirNginx/index.html
-#        dest: /home/ubuntu/jenkins_webhook_git/index.html
+        src: /home/ubuntu/ansible_git/DirNginx/index.html
+        dest: /home/ubuntu/jenkins_webhook_git/index.html
         owner: ubuntu
         group: ubuntu
         mode: 0644
+
+
+    - name: Copy File index.html
+      copy:
+        src: /home/ubuntu/ansible_git/DirNginx/Good-morning_0.jpg*
+        dest: /home/ubuntu/jenkins_webhook_git/Good-morning_0.jpg
+        owner: ubuntu
+        group: ubuntu
+        mode: 0644
+
 
     - name: Copy File Config
       copy:
