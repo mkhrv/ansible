@@ -1,6 +1,7 @@
 
 [clear]
-Ub-Ansible-03 ansible_host=ec2-54-93-232-192.eu-central-1.compute.amazonaws.com
+Ub-Ansible-03 ansible_host=ec2-18-185-75-77.eu-central-1.compute.amazonaws.com
+#ec2-54-93-232-192.eu-central-1.compute.amazonaws.com
 #ec2-3-120-115-237.eu-central-1.compute.amazonaws.com 
 #ansible_host=ec2-3-66-188-130.eu-central-1.compute.amazonaws.com
 
