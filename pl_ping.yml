@@ -8,3 +8,6 @@
     ping:
   - name: Check Linux distro
     debug: var=ansible_os_family
+  - name: Set timezone
+    command: /usr/bin/timedatectl set-timezone Europe/Kiev
+    when: "'Europe/Kiev' not in timedatectl_result.stdout"

@@ -1,2 +1,3 @@
+ANSIBLE_HOST_KEY_CHECKING=false /usr/bin/ansible all -m ping
 /usr/bin/ansible-playbook /home/ubuntu/ansible_git/pl_ping.yml
 /usr/bin/ansible-playbook /home/ubuntu/ansible_git/pl_nginx.yml
