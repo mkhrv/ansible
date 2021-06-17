@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "Creating instance ...."
+eval '/home/ubuntu/ec2/create_inst'
+echo "Getting instance DNS Name ....."
+eval '/home/ubuntu/ec2/descr_inst'
+echo "Creating file config"
+eval '/home/ubuntu/ec2/cr_conf'
+echo "Sleeping..."
+sleep 45
+echo "Adding fingerprint to known_hosts...."
+eval '/home/ubuntu/ec2/kn_host'
+sleep 10
+echo "Creating Hosts For Ansible"
+eval '/home/ubuntu/ec2/cr_ans_hosts'
+sleep 2
+echo "Pushing To Git"
+eval '/home/ubuntu/ec2/push_to_git'

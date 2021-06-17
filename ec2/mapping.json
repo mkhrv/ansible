@@ -1,0 +1,16 @@
+[
+    {
+	"DeviceName": "/dev/sda1",
+
+	"Ebs": {
+
+	    "VolumeSize": 10,
+	    "DeleteOnTermination": true
+
+	}
+    
+
+    }
+
+
+]

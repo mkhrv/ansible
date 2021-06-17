@@ -1,0 +1,16 @@
+#!/bin/bash
+
+file="/home/ubuntu/.ssh/config"
+hostname=`cat /home/ubuntu/ec2/dns_inst | tr -d '"'`
+
+echo "Host instance" > $file
+echo "	Hostname "$hostname >> $file
+echo "	User ubuntu" >> $file
+echo "	IdentityFile /home/ubuntu/.ssh/four.pem" >> $file
+
+
+echo "Host *" >> $file
+echo "	Hostname github.com" >> $file
+echo "	User mkhrv" >> $file
+echo "	IdentityFile /home/ubuntu/.ssh/id_ed25519" >> $file
+

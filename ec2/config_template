@@ -1,0 +1,4 @@
+Host instance
+    Hostname 
+    User ubuntu
+    IdentityFile /home/user/.ssh/two.pem

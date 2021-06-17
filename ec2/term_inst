@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "terminatin instance"
+id=`cat /home/ubuntu/ec2/ins_crd | tr -d '"'`
+
+aws ec2 terminate-instances --instance-ids $id >> terminate
+sleep 25
+echo "End of Termination"

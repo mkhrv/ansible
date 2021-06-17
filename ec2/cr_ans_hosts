@@ -1,0 +1,41 @@
+#!/bin/bash
+
+file="/home/ubuntu/ec2/hosts.txt"
+ans_dir="/home/ubuntu/GIT/ansible/"
+
+name=`cat /home/ubuntu/ec2/dns_inst | tr -d '"'`
+
+
+
+echo "[clear]"  > $file
+echo "Ub-Ansible-03 ansible_host="$name >> $file
+
+echo "[staging]" >> $file
+echo "Ub-Ansible ansible_host=ec2-18-184-1-8.eu-central-1.compute.amazonaws.com"  >> $file
+
+echo "[production]" >> $file
+echo "Ub-Ansible-02   ansible_host=ec2-52-58-239-100.eu-central-1.compute.amazonaws.com" >> $file
+
+echo "[clr:children]" >> $file
+echo "clear" >> $file
+
+echo "[clr:vars]" >> $file
+echo "ansible_user=ubuntu" >> $file
+echo "ansible_ssh_private_key_file=/home/ubuntu/.ssh/four.pem" >> $file
+
+
+echo "[stg:children]" >> $file
+echo "staging" >> $file
+
+echo "[stg:vars]" >> $file
+echo "ansible_user=ubuntu" >> $file
+echo "ansible_ssh_private_key_file=/home/ubuntu/.ssh/two.pem" >> $file
+ 
+echo "[prod:children]" >> $file
+echo "production" >> $file
+
+echo "[prod:vars]" >> $file
+echo "ansible_user=ubuntu" >> $file
+echo "ansible_ssh_private_key_file=/home/ubuntu/.ssh/three.pem" >> $file
+
+cp  $file $ans_dir

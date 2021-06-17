@@ -1,0 +1,107 @@
+{
+    "Groups": [],
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0a86f18b52e547759",
+            "InstanceId": "i-0dadedef4542c89bb",
+            "InstanceType": "t2.micro",
+            "KeyName": "four",
+            "LaunchTime": "2021-06-16T07:06:46.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "eu-central-1b",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-172-31-42-67.eu-central-1.compute.internal",
+            "PrivateIpAddress": "172.31.42.67",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-f736998b",
+            "VpcId": "vpc-34ff775e",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "161d1df8-1d6b-42a1-87d3-e032020d9c26",
+            "EbsOptimized": false,
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2021-06-16T07:06:46.000Z",
+                        "AttachmentId": "eni-attach-085c5a84893ff4b9e",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching",
+                        "NetworkCardIndex": 0
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "launch-wizard-24",
+                            "GroupId": "sg-0d10eed206355c736"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "06:f5:00:96:a0:1a",
+                    "NetworkInterfaceId": "eni-002e52908d96c1970",
+                    "OwnerId": "518575161313",
+                    "PrivateDnsName": "ip-172-31-42-67.eu-central-1.compute.internal",
+                    "PrivateIpAddress": "172.31.42.67",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-172-31-42-67.eu-central-1.compute.internal",
+                            "PrivateIpAddress": "172.31.42.67"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-f736998b",
+                    "VpcId": "vpc-34ff775e",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "launch-wizard-24",
+                    "GroupId": "sg-0d10eed206355c736"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            },
+            "EnclaveOptions": {
+                "Enabled": false
+            }
+        }
+    ],
+    "OwnerId": "518575161313",
+    "ReservationId": "r-05c9eaf3a2f2b9cf7"
+}

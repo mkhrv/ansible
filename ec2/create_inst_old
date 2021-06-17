@@ -1,0 +1,5 @@
+#!/bin/bash
+
+aws ec2 run-instances --image-id ami-0a86f18b52e547759 --count 1 --instance-type t2.micro --key-name four --security-group-ids sg-0d10eed206355c736 --subnet-id subnet-f736998b --block-device-mapping "[{\"DeviceName\":\"/dev/sda1\",\"Ebs\":{\"VolumeSize\":10,\"DeleteOnTermination\":true}}]" | jq '.Reservations[].Instances[].InstanceId' 
+#.Reservations[].Instances[].PublicDnsName, '
+  

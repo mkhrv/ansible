@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Pushing To Git"
+cd /home/ubuntu/GIT/ansible/
+eval './push_event'
+

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+id=`cat ins_crd | tr -d '"'`
+
+#aws ec2 describe-instances --instance-ids $id  | jq '.Reservations[].Instances[].InstanceId, .Reservations[].Instances[].PublicDnsName'
+
+aws ec2 describe-instances --instance-ids $id  | jq '.Reservations[].Instances[].PublicDnsName' > dns_inst
