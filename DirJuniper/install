@@ -1,0 +1,68 @@
+    6  apt install python3-pip
+    7  pip3 install ansible
+   10  chown root:root config
+   11  ssh gw03
+   18  chown userr:user /keyss
+   19  chown -R userr:userr /keyss
+   20  ansible all -m pping
+   21  ansible all -m ping
+   22  ansible gw -a "df -h"
+   23  poweroff
+   24  cd /keyss/
+   36  chown root:root -R gw03/
+   37  ssh gw03
+   38  chown userr:userr config
+   45  cd /
+   46  sudo mkdir /etc/ansible
+   47  sudo wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/ansible.cfg -P /etc/ansible
+   48  sudo wget https://raw.githubusercontent.com/ansible/ansible/devel/examples/hosts -P /etc/ansible
+   51  ansible-galaxy install Juniper.junos -p /etc/ansible/roles/
+   52  pip3 install junos-eznc
+   53  pip3 install jxmlease
+   54  ansible-galaxy list
+   55  ansible sw -a "show ntp status"
+   57  apt install net-tools
+   60  chmod 777 playbooks/
+   62  ping mydataexpress.ru
+   70  timedatectl list-timezones
+   71  timedatectl set-timezones Europe/Kiev
+   72  timedatectl set-timezone Europe/Kiev
+   74  service cron restart
+   83  pwd
+   84  state id_ed25519
+   85  stat id_ed25519
+   86  ansible-playbook pl-ping.yml
+   90  ansible-playbook pl-ping.yml
+   91  ansible-playbook pl-ping.yml -kK
+   92  ansible-playbook pl-ping.yml
+   94  ssh jauser@172.17.10.89 -p 49891
+   95  ssh gw03
+   96  nano pl-ping.yml
+   97  ansible-playbook pl-ping.yml
+  100  ansible-vault create passwd.yml
+  110  ssh cbp
+  111  ssh author@172.17.25.242
+  112  ping 172.17.25.242
+  140  pip install ncclient
+  198  nano pl-ping.yml
+  199  ssh cbp
+  215  ansible-galaxy collection install ansible.core.modules
+  216  ansible-galaxy collection install ansible core modules
+  217  ansible-galaxy collection list
+  218  ansible-galaxy collection install juniper.junos
+  219  ansible-galaxy collection install junipernetworks.junos
+  220  ansible-galaxy collection install juniper.junos
+  221  ansible-galaxy collection install Juniper.junos
+  239  ---
+  240  - name: Connection Testing
+  241  #  become: yes
+  242  #подключаем модуль juniper
+  243  #далее объявим переменные логин/пароль для ввода, пароль скрытый
+  244  #  vars_prompt:
+  245  #    - name: "DEVICE_USERNAME"
+  246  #      promt: "Device username"
+  247  #      private: no
+  248  #    - name: "DEVICE_PASSWORD"
+  249  #      promt: "Device password"
+  250  #      private: yes
+  251  #объявим переменную для определения настроек подключения

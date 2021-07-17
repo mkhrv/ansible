@@ -1,0 +1,5 @@
+---
+  - name: PlayCbp
+    import_playbook: cbp.yml
+  - name: PlayTermC
+    import_playbook: termc.yml

@@ -1,0 +1,13 @@
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                BH0208109327      EX3200-24T
+Routing Engine 0 REV 07   750-021261   BH0208109327      EX3200-24T, 8 POE
+FPC 0            REV 07   750-021261   BH0208109327      EX3200-24T, 8 POE
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           24x 10/100/1000 Base-T
+  PIC 1          REV 03A  711-021270   AR0208113741      4x GE SFP
+    Xcvr 0                UNKNOWN      YC6L460126        UNKNOWN
+    Xcvr 2       REV 01   740-020465   J06171009160      SFP-1000BASE-BX10-D
+Power Supply 0   REV 01   740-020957   AT0508105623      PS 320W AC
+Fan Tray                                                 Fan Tray

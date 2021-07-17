@@ -1,0 +1,147 @@
+<chassis-inventory>
+  <chassis style="inventory">
+    <name>Chassis</name>
+    <serial-number>BQ0210461256</serial-number>
+    <description>Virtual Chassis</description>
+    <chassis-module>
+      <name>Routing Engine 0</name>
+      <version>REV 07</version>
+      <part-number>750-033064</part-number>
+      <serial-number>BQ0210462105</serial-number>
+      <description>EX4200-48P, 48 POE</description>
+      <clei-code>COM5W00BRB</clei-code>
+      <model-number>EX4200-48P</model-number>
+    </chassis-module>
+    <chassis-module>
+      <name>Routing Engine 1</name>
+      <version>REV 07</version>
+      <part-number>750-033064</part-number>
+      <serial-number>BQ0210461256</serial-number>
+      <description>EX4200-48P, 48 POE</description>
+      <clei-code>COM5W00BRB</clei-code>
+      <model-number>EX4200-48P</model-number>
+    </chassis-module>
+    <chassis-module>
+      <name>FPC 0</name>
+      <version>REV 07</version>
+      <part-number>750-033064</part-number>
+      <serial-number>BQ0210462105</serial-number>
+      <description>EX4200-48P, 48 POE</description>
+      <clei-code>COM5W00BRB</clei-code>
+      <model-number>EX4200-48P</model-number>
+      <chassis-sub-module>
+        <name>CPU</name>
+        <part-number>BUILTIN</part-number>
+        <serial-number>BUILTIN</serial-number>
+        <description>FPC CPU</description>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>PIC 0</name>
+        <part-number>BUILTIN</part-number>
+        <serial-number>BUILTIN</serial-number>
+        <description>48x 10/100/1000 Base-T</description>
+        <clei-code>COM5W00BRB</clei-code>
+        <model-number>EX4200-48P</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>PIC 1</name>
+        <version>REV 05</version>
+        <part-number>711-026017</part-number>
+        <serial-number>CH0210477437</serial-number>
+        <description>2x 10GE SFP+</description>
+        <clei-code>COUIAWXBAA</clei-code>
+        <model-number>EX-UM-2X4SFP</model-number>
+        <chassis-sub-sub-module>
+          <name>Xcvr 0</name>
+          <version> </version>
+          <part-number>NON-JNPR</part-number>
+          <serial-number>S9091D8000087</serial-number>
+          <description>SFP+-10G-SR</description>
+        </chassis-sub-sub-module>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Power Supply 0</name>
+        <version>REV 03</version>
+        <part-number>740-020959</part-number>
+        <serial-number>AV0810431089</serial-number>
+        <description>PS 930W AC</description>
+        <clei-code>COUPACEEAB</clei-code>
+        <model-number>EX-PWR-930-AC</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Power Supply 1</name>
+        <version>REV 03</version>
+        <part-number>740-020959</part-number>
+        <serial-number>AV0810430672</serial-number>
+        <description>PS 930W AC</description>
+        <clei-code>COUPACEEAB</clei-code>
+        <model-number>EX-PWR-930-AC</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Fan Tray</name>
+        <description>Fan Tray</description>
+      </chassis-sub-module>
+    </chassis-module>
+    <chassis-module>
+      <name>FPC 1</name>
+      <version>REV 07</version>
+      <part-number>750-033064</part-number>
+      <serial-number>BQ0210461256</serial-number>
+      <description>EX4200-48P, 48 POE</description>
+      <clei-code>COM5W00BRB</clei-code>
+      <model-number>EX4200-48P</model-number>
+      <chassis-sub-module>
+        <name>CPU</name>
+        <part-number>BUILTIN</part-number>
+        <serial-number>BUILTIN</serial-number>
+        <description>FPC CPU</description>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>PIC 0</name>
+        <part-number>BUILTIN</part-number>
+        <serial-number>BUILTIN</serial-number>
+        <description>48x 10/100/1000 Base-T</description>
+        <clei-code>COM5W00BRB</clei-code>
+        <model-number>EX4200-48P</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>PIC 1</name>
+        <version>REV 05</version>
+        <part-number>711-026017</part-number>
+        <serial-number>CH0210477212</serial-number>
+        <description>2x 10GE SFP+</description>
+        <clei-code>COUIAWXBAA</clei-code>
+        <model-number>EX-UM-2X4SFP</model-number>
+        <chassis-sub-sub-module>
+          <name>Xcvr 0</name>
+          <version>REV 01</version>
+          <part-number>740-021309</part-number>
+          <serial-number>6160826099</serial-number>
+          <description>SFP+-10G-LR</description>
+        </chassis-sub-sub-module>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Power Supply 0</name>
+        <version>REV 03</version>
+        <part-number>740-020959</part-number>
+        <serial-number>AV0810430910</serial-number>
+        <description>PS 930W AC</description>
+        <clei-code>COUPACEEAB</clei-code>
+        <model-number>EX-PWR-930-AC</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Power Supply 1</name>
+        <version>REV 03</version>
+        <part-number>740-020959</part-number>
+        <serial-number>AV0810430460</serial-number>
+        <description>PS 930W AC</description>
+        <clei-code>COUPACEEAB</clei-code>
+        <model-number>EX-PWR-930-AC</model-number>
+      </chassis-sub-module>
+      <chassis-sub-module>
+        <name>Fan Tray</name>
+        <description>Fan Tray</description>
+      </chassis-sub-module>
+    </chassis-module>
+  </chassis>
+</chassis-inventory>

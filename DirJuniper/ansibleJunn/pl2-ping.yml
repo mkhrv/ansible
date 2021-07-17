@@ -1,0 +1,29 @@
+---
+- name: Get Device Information
+  hosts: alljun
+  connection: local
+  gather_facts: no
+
+  vars:
+    ssh_config: "/root/.ssh/config111"
+
+#    user: "{{ admin_username }}"
+#    passwd: "{{ admin_password }}"
+
+#  vars_files:
+#    - vault-vars.yaml
+
+  tasks:
+    - name: Retrieve facts from devices running Junos OS
+      juniper.device.facts:  
+        savedir: "{{ playbook_dir }}"
+
+#    - name: Print version
+#      debug:
+#        var; junos.version
+
+
+#    - name: Get hardware inventory
+#      juniper.device.command:
+#        commands: "show chassis hardware"
+#        dest_dir: "{{ playbook_dir }}"

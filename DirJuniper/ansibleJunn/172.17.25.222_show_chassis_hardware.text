@@ -1,0 +1,13 @@
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                BQ0210117510      EX4200-48P
+Routing Engine 0 REV 24   750-021255   BQ0210117510      EX4200-48P, 48 POE
+FPC 0            REV 24   750-021255   BQ0210117510      EX4200-48P, 48 POE
+  CPU                     BUILTIN      BUILTIN           FPC CPU
+  PIC 0                   BUILTIN      BUILTIN           48x 10/100/1000 Base-T
+  PIC 1          REV 04   711-021270   AR0209024530      4x GE SFP
+    Xcvr 1       REV 01   740-020465   IT1411281         SFP-1000BASE-BX10-D
+Power Supply 0   REV 03   740-020959   AV0810230912      PS 930W AC
+Power Supply 1   REV 03   740-020959   AV0810210093      PS 930W AC
+Fan Tray                                                 Fan Tray

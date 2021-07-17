@@ -1,0 +1,57 @@
+---
+- name: Get Device Facts
+  hosts: akc2239
+  connection: local
+  gather_facts: no
+
+
+  vars:
+#    user: "{{ admin_username }}"
+#    passwd: "{{ admin_password }}"
+    user: "{{ ansible_jun_username }}"
+    ssh_private_key_file: "{{ ansible_ssh_private_key_file }}"
+
+
+  tasks:
+    - name: Checking NETCONF connectivity
+      wait_for: 
+        host: "{{ inventory_hostname }}"
+        port: 830 
+        timeout: 5
+
+    - name: Retrieving information from devices running Junos OS
+      juniper.device.facts:
+        savedir: "{{ playbook_dir }}/facts"
+
+    - name: Print version
+      debug:
+        var: junos.version
+
+    - name: Get software and uptime information
+      juniper.device.command:        
+        commands: 
+          - "show version"        
+          - "show system uptime"
+      register: junos_result
+
+    - name: Print response
+      debug:
+        var: junos_result
+
+    - name: Get software and uptime information
+      juniper.device.command:        
+        commands: 
+          - "show ethernet-switching table brief" 
+        dest_dir: "{{ playbook_dir }}/macs"
+
+#      register: junos_result
+
+#    - name: Print response
+#      debug:
+#        var: junos_result
+
+    - name: Get hardware inventory
+      juniper.device.command:
+        commands: "show chassis hardware"
+        dest_dir: "{{ playbook_dir }}/chasis"
+
